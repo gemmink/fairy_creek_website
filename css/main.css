@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    background-color: #006622;
+}
+#upper_title {
+    clear:left;
+    font-family:Arial;
+    padding:20px;
+    font-size:30px;
+    text-align: center;
+    color:white;
+}
+.section_photo
+{
+    justify-content:center;
+    background-color:black;
+    display:flex;
+    width:30px;
+}
