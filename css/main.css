@@ -1,18 +1,18 @@
 body {
     margin: 0px;
-    background: rgb(14,36,0);
-    background: linear-gradient(90deg, rgba(11,121,9,.96) 0%, rgba(11,115,9,1) 5%,rgba(11,115,9,1) 95%, rgba(11,121,9,.96) 100%);
+    background: rgb(14, 36, 0);
+    background: linear-gradient(90deg, rgba(11, 121, 9, .96) 0%, rgba(11, 115, 9, 1) 5%, rgba(11, 115, 9, 1) 95%, rgba(11, 121, 9, .96) 100%);
 
 }
 
 #upper_bar {
-    display:flex;
-}
-.upper_bar_cell {
-    color:white;
-    padding:20px;
+    display: flex;
 }
 
+.upper_bar_cell {
+    color: white;
+    padding: 20px;
+}
 
 
 .upper_title {
@@ -30,7 +30,7 @@ body {
     justify-content: center;
     background-color: black;
     display: flex;
-    padding:0;
+    padding: 0;
 }
 
 .page_img {
