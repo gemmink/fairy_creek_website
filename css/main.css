@@ -2,6 +2,7 @@ body {
     margin: 0px;
     background: rgb(14, 36, 0);
     background: linear-gradient(90deg, rgba(11, 121, 9, .96) 0%, rgba(11, 115, 9, 1) 5%, rgba(11, 115, 9, 1) 95%, rgba(11, 121, 9, .96) 100%);
+    z-index:0;
 
 }
 
@@ -32,6 +33,7 @@ body {
     display: flex;
     padding: 0;
     width:100%;
+    z-index:1;
 }
 
 .page_img {
