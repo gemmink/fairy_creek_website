@@ -29,10 +29,9 @@ body {
 }
 
 .section_photo {
-    justify-content: center;
     background-color: black;
     padding: 0;
-    min-width:100%;
+    width:100%;
     z-index:1;
     display:block;
 }
