@@ -40,6 +40,8 @@ body {
 
 .page_img {
     object-fit: contain;
+    max-width:800px;
+    height:auto
 }
 
 .text_section {
