@@ -38,7 +38,7 @@ body {
 }
 
 
-page_img {
+.page_img {
     height: auto;
     display: block;
     max-width:90%;
