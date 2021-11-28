@@ -41,7 +41,7 @@ body {
 page_img {
     height: auto;
     display: block;
-    width:90%;
+    max-width:90%;
 }
 
 .text_section {
