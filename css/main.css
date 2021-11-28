@@ -38,10 +38,11 @@ body {
 }
 
 .page_img {
+    height:40%;
+    width:auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 .text_section {
