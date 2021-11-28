@@ -39,8 +39,7 @@ body {
 
 @media only screen and (max-width: 1000px)  {
     .page_img {
-        object-fit: contain;
-        width: 700px;
+        width: 800px;
         height: auto
     }
 }
