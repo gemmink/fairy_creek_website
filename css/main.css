@@ -42,8 +42,6 @@ color:black;
 }
 img{
     margin-bottom:-3px;
-    max-width:100%;
-    height:auto;
 }
 
 .page_img {
@@ -67,7 +65,7 @@ text-align:center;
         height:auto;
     }
     body {
-        background-color: red;
+        color: red;
     }
 
 }
