@@ -1,0 +1,197 @@
+Index: css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>body {\n    margin: 0px;\n   background: mintcream;\n    /* background: rgb(14, 36, 0);\n   background: linear-gradient(90deg, rgba(14, 36, 0, .9) 0%, rgba(5, 60, 0, 1) 3%, rgba(5, 60, 0, 1) 97%, rgba(14, 36, 0, .9) 100%);*/\n    z-index:0;\n\n}\n\n#upper_bar {\n    display: flex;\n}\n\n.upper_bar_cell {\n    color: black;\n    padding: 20px;\n}\n\n\n.upper_title {\n    font-family: Arial;\n    padding: 30px;\n    font-size: 90px;\n    font-weight: lighter;\n    text-align: center;\n    color: black;\n    clear: left;\n    margin: 0px;\n}\n\n.section_photo {\n    justify-content: center;\n    background-color: black;\n    display: flex;\n    padding: 0;\n    min-width:100%;\n    background-size: cover;\n    z-index:1;\n}\n\n.page_img {\n    flex-shrink: 0;\n}\n\n.text_section {\n    font-weight: lighter;\n    padding: 20px 30px 0px 30px;\n    color: black;\n    font-family: Courier New;\n    font-size: 25px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/main.css b/css/main.css
+--- a/css/main.css	(revision 962aa10b47280862c4990808bfe49a67a355d5e4)
++++ b/css/main.css	(date 1639009897531)
+@@ -3,7 +3,7 @@
+    background: mintcream;
+     /* background: rgb(14, 36, 0);
+    background: linear-gradient(90deg, rgba(14, 36, 0, .9) 0%, rgba(5, 60, 0, 1) 3%, rgba(5, 60, 0, 1) 97%, rgba(14, 36, 0, .9) 100%);*/
+-    z-index:0;
++    z-index:1;
+ 
+ }
+ 
+@@ -16,6 +16,16 @@
+     padding: 20px;
+ }
+ 
++img {margin-top:0;
++margin-bottom:-3px;}
++
++a:visited{
++    color:black;
++}
++a{
++    font-family: Arial;
++
++}
+ 
+ .upper_title {
+     font-family: Arial;
+@@ -32,10 +42,11 @@
+     justify-content: center;
+     background-color: black;
+     display: flex;
+-    padding: 0;
++    padding: 0 0 0 0;
++    margin-bottom: 0px;
+     min-width:100%;
+     background-size: cover;
+-    z-index:1;
++    z-index:0;
+ }
+ 
+ .page_img {
+@@ -44,8 +55,11 @@
+ 
+ .text_section {
+     font-weight: lighter;
+-    padding: 20px 30px 0px 30px;
++    padding: 20px 30px 20px 30px;
+     color: black;
+     font-family: Courier New;
+     font-size: 25px;
++}
++.caption_section{
++    text-align:center;
+ }
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\n<html class=\"no-js\" lang=\"\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Fairy Creek</title>\n    <link rel=\"stylesheet\" href=\"css/main.css\">\n    <meta name=\"theme-color\" content=\"#fafafa\">\n</head>\n\n<body>\n<div id=\"upper_bar\">\n    <div class=\"upper_bar_cell\">Main</div>\n    <div class=\"upper_bar_cell\">FAQ</div>\n</div>\n\n<div class=\"upper_title\">Fairy Creek</div>\n<div class=\"section_photo\">\n    <div class=\"centered\">\n        <img class=\"page_img\" src=\"./imgs/fairy_creek_img1.jpg\"></img>\n    </div>\n</div>\n<div class=\"text_section\">\n    Fairy Creek is one of the last unlogged old-growth forests on Vancouver Island. It is a priceless part of Canadian\n    biodiversity and natural heritage. The forest should be preserved for future generations, yet it is currently in\n    danger. Fairy Creek is being logged by Teal-Jones Group. Only 2.7% of high productivity old-growth BC Forest\n    remains, and 75% of those forests have been slated for logging.\n</div>\n<div class=\"section_photo\">\n    <div class=\"centered\">\n        <img class=\"page_img\" src=\"./imgs/fairy_creek_img2.jpg\"></img>\n    </div>\n</div>\n<div class=\"text_section\">\n    To fight back against the logging of Fairy Creek, protestors have blockaded roads into the forest. This has become\n    one of the largest acts of Civil Disobedience in Canadian History. Over 1100 people have been arrested by the RCMP\n    at Fairy Creek under a court injunction.\n</div>\n\n<script src=\"js/main.js\"></script>\n\n</body>\n\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 962aa10b47280862c4990808bfe49a67a355d5e4)
++++ b/index.html	(date 1639009943358)
+@@ -9,11 +9,11 @@
+ 
+ <body>
+ <div id="upper_bar">
+-    <div class="upper_bar_cell">Main</div>
+-    <div class="upper_bar_cell">FAQ</div>
++    <div class="upper_bar_cell"><a href="./index.html">Main</a></div>
++    <div class="upper_bar_cell"><a href="./about.html">Some Pictures</a></div>
+ </div>
+ 
+-<div class="upper_title">Fairy Creek</div>
++<div class="upper_title">Fairy Creek Protests</div>
+ <div class="section_photo">
+     <div class="centered">
+         <img class="page_img" src="./imgs/fairy_creek_img1.jpg"></img>
+Index: fairy_creek.html
+===================================================================
+diff --git a/fairy_creek.html b/fairy_creek.html
+deleted file mode 100644
+--- a/fairy_creek.html	(revision 962aa10b47280862c4990808bfe49a67a355d5e4)
++++ /dev/null	(revision 962aa10b47280862c4990808bfe49a67a355d5e4)
+@@ -1,19 +0,0 @@
+-<!doctype html>
+-<html class="no-js" lang="">
+-
+-<head>
+-  <meta charset="utf-8">
+-  <title>Fairy Creek</title>
+-  <link rel="stylesheet" href="css/main.css">
+-  <meta name="theme-color" content="#fafafa">
+-</head>
+-
+-<body>
+-
+-  <!-- Add your site or application content here -->
+-  <p>Hello world! This is HTML5 Boilerplate.</p>
+-  <script src="js/main.js"></script>
+-
+-</body>
+-
+-</html>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e8c8066a-4606-44b8-ad6f-c65e2275b6bb\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/website.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/website.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"21J44J3kwZUYCaU9xq7pV0HIvTs\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\Michael Gemmink\\WebstormProjects\\website\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e8c8066a-4606-44b8-ad6f-c65e2275b6bb\" name=\"Changes\" comment=\"\" />\n      <created>1637645663408</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1637645663408</updated>\n      <workItem from=\"1637645666073\" duration=\"5194000\" />\n      <workItem from=\"1637835075203\" duration=\"2642000\" />\n      <workItem from=\"1638026006891\" duration=\"7564000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 962aa10b47280862c4990808bfe49a67a355d5e4)
++++ b/.idea/workspace.xml	(date 1639009980634)
+@@ -2,10 +2,14 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="e8c8066a-4606-44b8-ad6f-c65e2275b6bb" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/website.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/fairy_creek.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,7 +48,8 @@
+       <updated>1637645663408</updated>
+       <workItem from="1637645666073" duration="5194000" />
+       <workItem from="1637835075203" duration="2642000" />
+-      <workItem from="1638026006891" duration="7564000" />
++      <workItem from="1638026006891" duration="9217000" />
++      <workItem from="1639007909159" duration="2052000" />
+     </task>
+     <servers />
+   </component>
+Index: about.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/about.html b/about.html
+new file mode 100644
+--- /dev/null	(date 1639009980569)
++++ b/about.html	(date 1639009980569)
+@@ -0,0 +1,37 @@
++<!doctype html>
++<html class="no-js" lang="">
++<head>
++  <meta charset="utf-8">
++  <title>Fairy Creek</title>
++  <link rel="stylesheet" href="css/main.css">
++  <meta name="theme-color" content="#fafafa">
++</head>
++
++<body>
++<div id="upper_bar">
++  <div class="upper_bar_cell"><a href="./index.html">Main</a></div>
++  <div class="upper_bar_cell"><a href="./about.html">Some Pictures</a></div>
++</div>
++
++<div class="upper_title">Pictures From Fairy Creek</div>
++<div class="section_photo">
++  <div class="centered">
++    <img class="page_img" src="./imgs/fairy_creek_img4.jpg"></img>
++  </div>
++</div>
++<div class="caption_section text_section">
++  Logging On Fairy Creek
++</div>
++<div class="section_photo" >
++  <div class="centered">
++    <img class="page_img" src="./imgs/fairy_creek_img5.jpg"></img>
++  </div>
++</div>
++<div class="caption_section text_section">
++  Road To Fairy Creek
++</div>
++<script src="js/main.js"></script>
++
++</body>
++
++</html>
