@@ -15,8 +15,16 @@ body {
     color: black;
     padding: 20px;
 }
+img{
+    padding-bottom:-3px;
+}
+a{
+    font-family: Arial;
 
-
+}
+a:visited {
+color:black;
+}
 .upper_title {
     font-family: Arial;
     padding: 30px;
@@ -48,4 +56,9 @@ body {
     color: black;
     font-family: Courier New;
     font-size: 25px;
+}
+
+.caption_section {
+ color:black;
+
 }
