@@ -63,9 +63,13 @@ img{
 .caption_section {
 text-align:center;
 }
-@media  (max-width: 800px) {
+@media screen and (max-width: 800px) {
     img{
         max-width:600px;
         height:auto;
     }
+    body {
+        background: red;
+    }
+
 }
