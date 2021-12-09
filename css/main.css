@@ -63,7 +63,7 @@ img{
 .caption_section {
 text-align:center;
 }
-@media screen and (max-width: 800px) {
+@media mobile {
     img{
         max-width:600px;
         height:auto;
