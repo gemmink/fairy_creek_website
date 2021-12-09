@@ -40,7 +40,11 @@ color:black;
     min-width:100%;
     background-size: cover;
     z-index:1;
-    padding-bottom:-3px;
+}
+img{
+    margin-bottom:-3px;
+
+
 }
 
 .page_img {
