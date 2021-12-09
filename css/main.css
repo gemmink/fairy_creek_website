@@ -59,7 +59,7 @@ img{
 .caption_section {
 text-align:center;
 }
-@media (max-width:1600px) {
+@media (max-width:1400px) {
     img{
         max-width:100%;
         height:auto;
